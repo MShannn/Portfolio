@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="scripts.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Projects</h1>
+    </header>
+
+    <main>
+
+
+        <section class="project">
+            <h2>GoRides</h2>
+            <p class="project-description">GoRides is a comprehensive ride-hailing solution designed to offer seamless
+                transportation services
+                through two dedicated mobile applications. The Passenger app allows users to easily book rides by
+                selecting their preferred car type and inputting their destination. Upon requesting a ride, the app
+                automatically sends the request to nearby drivers, minimizing wait times. With integrated wallet
+                functionality, passengers can make secure and effortless payments through the Flutterwave payment
+                gateway. Additionally, the app features a referral code system, enabling users to earn rewards by
+                inviting new users, which promotes engagement and drives platform growth.</p>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>Firebase:</strong> Used for real-time database and user authentication.</li>
+                <li><strong>Flutterwave:</strong> Integrated payment gateway for secure transactions.</li>
+                <li><strong>Google Maps API:</strong> Provides real-time location tracking and route optimization.</li>
+            </ul>
+
+
+            <!-- Image Slider -->
+            <div class="slider">
+                <!-- Left Arrow -->
+                <button class="slider-arrow left">&#10094;</button>
+
+                <div class="slides">
+                    <img src="img/go1.jpg" alt="Screenshot 1 of Project 1" class="slider-image">
+                    <img src="img/go6.jpg" alt="Screenshot 5 of Project 1" class="slider-image">
+
+                    <img src="img/go2.jpg" alt="Screenshot 2 of Project 1" class="slider-image">
+                    <img src="img/go3.jpg" alt="Screenshot 3 of Project 1" class="slider-image">
+                    <img src="img/go4.jpg" alt="Screenshot 4 of Project 1" class="slider-image">
+                    <img src="img/go5.jpg" alt="Screenshot 5 of Project 1" class="slider-image">
+                    <img src="img/go7.jpg" alt="Screenshot 5 of Project 1" class="slider-image">
+                    <img src="img/go8.jpg" alt="Screenshot 5 of Project 1" class="slider-image">
+
+
+                    <img src="img/d1.png" alt="Screenshot 1 of Project 1" class="slider-image">
+                    <img src="img/d2.png" alt="Screenshot 5 of Project 1" class="slider-image">
+
+                    <img src="img/d4.png" alt="Screenshot 2 of Project 1" class="slider-image">
+                    <img src="img/d4.png" alt="Screenshot 3 of Project 1" class="slider-image">
+                    <img src="img/d5.png" alt="Screenshot 4 of Project 1" class="slider-image">
+                </div>
+
+                <!-- Right Arrow -->
+                <button class="slider-arrow right">&#10095;</button>
+            </div>
+
+            <!-- Modal -->
+            <div id="imageModal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Back to <a href="index.html">Home</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
