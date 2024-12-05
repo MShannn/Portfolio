@@ -2,46 +2,37 @@
 <html lang="en">
 
 <head>
-    <script src="scripts.js"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <script src="scripts.js"></script>
+
     <header>
         <h1>Projects</h1>
     </header>
 
     <main>
 
-
         <section class="project">
             <h2>GoRides</h2>
             <p class="project-description">GoRides is a comprehensive ride-hailing solution designed to offer seamless
-                transportation services
-                through two dedicated mobile applications. The Passenger app allows users to easily book rides by
-                selecting their preferred car type and inputting their destination. Upon requesting a ride, the app
-                automatically sends the request to nearby drivers, minimizing wait times. With integrated wallet
-                functionality, passengers can make secure and effortless payments through the Flutterwave payment
-                gateway. Additionally, the app features a referral code system, enabling users to earn rewards by
-                inviting new users, which promotes engagement and drives platform growth.</p>
-            <p><strong>Technologies Used:</strong></p>
+                transportation services through two dedicated mobile applications...</p>
+            <p><strong>Tech:</strong></p>
             <ul>
-                <li><strong>Firebase:</strong> Used for real-time database and user authentication.</li>
+                <li><strong>Firebase: </strong>Used for real-time database and user authentication.</li>
                 <li><strong>Flutterwave:</strong> Integrated payment gateway for secure transactions.</li>
                 <li><strong>Google Maps API:</strong> Provides real-time location tracking and route optimization.</li>
             </ul>
 
-
             <!-- Image Slider -->
             <div class="slider">
-                <!-- Left Arrow -->
                 <button class="slider-arrow left">&#10094;</button>
-
                 <div class="slides">
                     <img src="img/go1.jpg" alt="Screenshot 1 of Project 1" class="slider-image">
                     <img src="img/go6.jpg" alt="Screenshot 5 of Project 1" class="slider-image">
@@ -61,12 +52,182 @@
                     <img src="img/d4.png" alt="Screenshot 3 of Project 1" class="slider-image">
                     <img src="img/d5.png" alt="Screenshot 4 of Project 1" class="slider-image">
                 </div>
-
-                <!-- Right Arrow -->
                 <button class="slider-arrow right">&#10095;</button>
             </div>
 
-            <!-- Modal -->
+            <!-- Modal for image preview -->
+            <div id="imageModal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+        </section>
+
+
+
+
+        <section class="project">
+            <h2>FinderOnline</h2>
+            <p>
+                <strong>FinderOnline</strong> is an innovative healthcare platform designed to connect users with
+                specialist
+                doctors for seamless medical consultations. The application provides a convenient way for users to
+                browse
+                through a comprehensive list of healthcare professionals, view their specialties, and make informed
+                decisions
+                when booking appointments.
+            </p>
+            <ul>
+                <li><strong>Doctor Listings:</strong> Users can search for and view detailed profiles of specialist
+                    doctors,
+                    including their expertise, availability, and consultation fees.
+                </li>
+                <li><strong>Appointment Booking:</strong> The platform allows users to select their preferred date and
+                    time
+                    for consultations, ensuring a personalized and efficient scheduling experience.
+                </li>
+                <li><strong>Booking Requests:</strong> Once a user selects a time slot, a booking request is sent
+                    directly
+                    to the doctor for confirmation.
+                </li>
+                <li><strong>Integrated Communication:</strong> FinderOnline supports seamless communication through:
+                    <ul>
+                        <li><strong>Text Chat:</strong> For quick messaging between users and doctors.</li>
+                        <li><strong>Audio Calls:</strong> Providing a more personal interaction for detailed
+                            discussions.</li>
+                        <li><strong>Video Calls:</strong> Leveraging the <strong>Twilio</strong> library for
+                            high-quality face-to-face consultations.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                The application is developed using <strong>Firebase</strong> for real-time data synchronization and
+                authentication, ensuring a secure and responsive user experience. <strong>Java</strong> powers the core
+                functionalities, while <strong>Twilio</strong> handles robust audio and video communication.
+            </p>
+            <p>
+                <strong>Tech:</strong> Firebase, Twilio, Java.
+            </p>
+
+            <!-- Image Slider -->
+            <div class="slider">
+                <button class="slider-arrow left">&#10094;</button>
+                <div class="slides">
+                    <img src="img/dronline/d1.jpeg" alt="Screenshot 1 of Project 1" class="slider-image">
+                    <img src="img/dronline//d2.jpeg" alt="Screenshot 5 of Project 1" class="slider-image">
+
+                    <img src="img/dronline/d3.jpeg" alt="Screenshot 2 of Project 1" class="slider-image">
+                    <img src="img/dronline/d4.jpeg" alt="Screenshot 3 of Project 1" class="slider-image">
+                    <img src="img/dronline/d5.jpeg" alt="Screenshot 4 of Project 1" class="slider-image">
+                    <img src="img/dronline/d6.jpeg" alt="Screenshot 5 of Project 1" class="slider-image">
+                    <img src="img/dronline/d7.jpeg" alt="Screenshot 5 of Project 1" class="slider-image">
+                    <img src="img/dronline/d8.jpeg" alt="Screenshot 5 of Project 1" class="slider-image">
+
+
+                    <img src="img/dronline/d9.jpeg" alt="Screenshot 1 of Project 1" class="slider-image">
+                    <img src="img/dronline/d10.jpeg" alt="Screenshot 5 of Project 1" class="slider-image">
+
+                    <img src="img/dronline/d11.jpeg" alt="Screenshot 2 of Project 1" class="slider-image">
+                    <img src="img/dronline/d12.jpeg" alt="Screenshot 3 of Project 1" class="slider-image">
+                </div>
+                <button class="slider-arrow right">&#10095;</button>
+            </div>
+
+            <!-- Modal for image preview -->
+            <div id="imageModal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+        </section>
+
+        <section class="project">
+            <h2>Eatlub</h2>
+            <p class="project-description">
+                Eatlub is a comprehensive food delivery solution designed for both restaurants and riders. The app
+                allows restaurants to register, list their food items, and manage orders. Users can browse menus, select
+                food, track their order history, rate riders, and tip them for good service. Riders can accept orders,
+                track deliveries, and ensure timely service. The backend of the app uses REST APIs built in Java with
+                the Spring MVC framework, providing a robust and scalable solution for both restaurants and riders.
+            </p>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>Google Maps API:</strong> Used for tracking riders and optimizing delivery routes.</li>
+                <li><strong>Firebase:</strong> Used for real-time notifications to users and riders.</li>
+            </ul>
+
+            <!-- Image Slider -->
+            <div class="slider">
+                <button class="slider-arrow left">&#10094;</button>
+                <div class="slides">
+                    <img src="img/food/d1.jpeg" alt="Screenshot 1 of Eatlub" class="slider-image">
+                    <img src="img/food/d3.jpeg" alt="Screenshot 3 of Eatlub" class="slider-image">
+                    <img src="img/food/d2.jpeg" alt="Screenshot 2 of Eatlub" class="slider-image">
+
+                    <img src="img/food/d4.jpeg" alt="Screenshot 4 of Eatlub" class="slider-image">
+                    <img src="img/food/d5.jpeg" alt="Screenshot 5 of Eatlub" class="slider-image">
+
+                    <img src="img/food/d7.jpeg" alt="Screenshot 7 of Eatlub" class="slider-image">
+                    <img src="img/food/d6.jpeg" alt="Screenshot 6 of Eatlub" class="slider-image">
+                    <img src="img/food/d9.jpeg" alt="Screenshot 9 of Eatlub" class="slider-image">
+                    <img src="img/food/d16.jpeg" alt="Screenshot 16 of Eatlub" class="slider-image">
+
+                    <img src="img/food/d10.jpeg" alt="Screenshot 10 of Eatlub" class="slider-image">
+                    <img src="img/food/d8.jpeg" alt="Screenshot 8 of Eatlub" class="slider-image">
+
+                    <img src="img/food/d15.jpeg" alt="Screenshot 15 of Eatlub" class="slider-image">
+
+                    <img src="img/food/d12.jpeg" alt="Screenshot 12 of Eatlub" class="slider-image">
+                    <img src="img/food/d13.jpeg" alt="Screenshot 13 of Eatlub" class="slider-image">
+                    <img src="img/food/d14.jpeg" alt="Screenshot 14 of Eatlub" class="slider-image">
+
+                </div>
+                <button class="slider-arrow right">&#10095;</button>
+            </div>
+
+            <!-- Modal for image preview -->
+            <div id="imageModal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+        </section>
+
+        <section class="project">
+            <h2>Reading Glasses</h2>
+            <p class="project-description">
+                Reading Glasses is an innovative app that helps people with low vision or reading difficulties. It
+                allows users to magnify text and convert it into a more readable format. Users can upload images, and
+                the app will extract the text using Optical Character Recognition (OCR) technology. The app also
+                includes a text-to-speech feature powered by Google Text-to-Speech, allowing users to listen to the
+                text. Additionally, users can save the converted text as a file for later use.
+            </p>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>OCR (Tesseract SDK):</strong> Used for extracting text from images.</li>
+                <li><strong>Google Text-to-Speech API:</strong> Converts text into speech.</li>
+            </ul>
+
+
+            <!-- Image Slider -->
+            <div class="slider">
+                <button class="slider-arrow left">&#10094;</button>
+                <div class="slides">
+                    <img src="img/reading/d1.jpeg" alt="Screenshot 1 of Eatlub" class="slider-image">
+                    <img src="img/reading/d3.jpeg" alt="Screenshot 3 of Eatlub" class="slider-image">
+                    <img src="img/reading/d2.jpeg" alt="Screenshot 2 of Eatlub" class="slider-image">
+
+                    <img src="img/reading/d4.jpeg" alt="Screenshot 4 of Eatlub" class="slider-image">
+                    <img src="img/reading/d5.jpeg" alt="Screenshot 5 of Eatlub" class="slider-image">
+
+                    <img src="img/reading/d6.jpeg" alt="Screenshot 7 of Eatlub" class="slider-image">
+
+
+                </div>
+                <button class="slider-arrow right">&#10095;</button>
+            </div>
+
+            <!-- Modal for image preview -->
             <div id="imageModal" class="modal">
                 <span class="close-modal">&times;</span>
                 <img class="modal-content" id="modalImage">
@@ -75,11 +236,110 @@
 
         </section>
 
+
+
+        <section class="project">
+            <h2>What's Here</h2>
+            <p class="project-description">
+                "What's Here" allows users to explore and discover different places like bars, restaurants, hospitals,
+                shopping malls, and more. Users can browse detailed descriptions, pricing information, and view images
+                of places listed on the map. This project provides a platform where users can find places based on
+                location, category, and user reviews.
+            </p>
+            <p><strong>Techn :</strong></p>
+            <ul>
+                <li><strong>Google Maps API:</strong> Used to display places on the map and enable location-based
+                    search.</li>
+            </ul>
+
+            <!-- Image Slider -->
+            <div class="slider">
+                <button class="slider-arrow left">&#10094;</button>
+                <div class="slides">
+                    <img src="img/whats/d1.jpg" alt="Screenshot 1 of Eatlub" class="slider-image">
+                    <img src="img/whats/d2.jpg" alt="Screenshot 3 of Eatlub" class="slider-image">
+                    <img src="img/whats/d3.jpg" alt="Screenshot 2 of Eatlub" class="slider-image">
+
+                    <img src="img/whats/d4.jpg" alt="Screenshot 4 of Eatlub" class="slider-image">
+                    <img src="img/whats/d7.jpg" alt="Screenshot 7 of Eatlub" class="slider-image">
+
+
+                    <img src="img/whats/d5.jpg" alt="Screenshot 5 of Eatlub" class="slider-image">
+
+
+                </div>
+                <button class="slider-arrow right">&#10095;</button>
+            </div>
+
+            <!-- Modal for image preview -->
+            <div id="imageModal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="project">
+            <h2>Xls Viewer</h2>
+            <p>
+                <strong>Xls Viewer</strong> is an efficient mobile application designed to help users easily view,
+                manage,
+                and organize their Excel files directly from their device. The application provides a simple interface
+                for opening and interacting with Excel documents, offering key functionalities to enhance the user
+                experience.
+            </p>
+            <ul>
+                <li><strong>View Excel Files:</strong> Users can easily browse and view all Excel files stored on their
+                    device
+                    in a simple and intuitive interface.
+                </li>
+                <li><strong>Delete Files:</strong> The application allows users to delete any unwanted Excel files,
+                    keeping their storage organized.
+                </li>
+                <li><strong>Save as Favorite:</strong> Users can mark specific Excel files as favorites,
+                    enabling easy access to important or frequently used documents.
+                </li>
+            </ul>
+            <!-- Image Slider -->
+            <div class="slider">
+                <button class="slider-arrow left">&#10094;</button>
+                <div class="slides">
+                    <img src="img/xls/d1.jpeg" alt="Screenshot 1 of Eatlub" class="slider-image">
+                    <img src="img/xls/d2.jpeg" alt="Screenshot 2 of Eatlub" class="slider-image">
+
+                    <img src="img/xls/d3.jpeg" alt="Screenshot 3 of Eatlub" class="slider-image">
+
+                    <img src="img/xls/d5.jpeg" alt="Screenshot 5 of Eatlub" class="slider-image">
+
+                    <img src="img/xls/d6.jpeg" alt="Screenshot 7 of Eatlub" class="slider-image">
+                    <img src="img/xls/d4.jpeg" alt="Screenshot 4 of Eatlub" class="slider-image">
+
+
+
+                </div>
+                <button class="slider-arrow right">&#10095;</button>
+            </div>
+
+            <!-- Modal for image preview -->
+            <div id="imageModal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>Back to <a href="index.html">Home</a></p>
-    </footer>
+
 
     <script src="scripts.js"></script>
 </body>
