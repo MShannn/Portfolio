@@ -1024,7 +1024,7 @@ section {
 .main-title .bg-text {
   display: block;
   font-size: 3em;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(150, 52, 52, 0.1);
   position: absolute;
   z-index: -1;
   transform: translate(-10px, -40px);
