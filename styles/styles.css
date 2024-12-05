@@ -1002,12 +1002,11 @@ section {
 
 .mainpage {
   grid-template-columns: repeat(1, 1fr);
-  padding-bottom: 6rem;
-  padding: 6rem;
+  padding-bottom: 3rem;
+  padding: 3rem;
 }
 
-/*# sourceMappingURL=styles.css.map */
-
+ 
 
 
 
