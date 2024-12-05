@@ -7,6 +7,7 @@ body {
 
 }
 
+
 header {
     text-align: center;
     background-color: #111;
@@ -18,9 +19,22 @@ header {
 }
 
 header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
     color: white;
-    letter-spacing: 1px; /* Add spacing between letters */
+    margin: 20px;
+}
+.home-icon {
+    margin-right: 10px; /* Adds spacing between the icon and "Projects" */
+    color: white; /* Matches the text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 1.5rem; /* Adjust the icon size */
+    transition: color 0.3s ease;
+}
 
+.home-icon:hover {
+    color: white; /* Change color on hover for better UX */
 }
 
 .project {
@@ -73,7 +87,7 @@ header h1 {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: cyan;
+    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
