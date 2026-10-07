@@ -1,630 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <title>Muhammad Shan · Senior Android Developer</title>
+  <meta name="description" content="Muhammad Shan, Senior Android Developer in London. Kotlin, Jetpack Compose and Flutter apps live on Google Play and the App Store: biometrics, NFC, payments and public-safety apps." />
+  <meta property="og:title" content="Muhammad Shan · Senior Android Developer" />
+  <meta property="og:description" content="Kotlin · Jetpack Compose · Flutter. Secure, production mobile apps live on Google Play and the App Store." />
+  <meta property="og:image" content="img/s1.jpg" />
+  <meta name="theme-color" content="#4f6bff" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <script src="https://kit.fontawesome.com/5e4727ce56.js" crossorigin="anonymous"></script>
-
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="site.css" />
 </head>
-<script src="scripts.js"></script>
-
-<body class="main-content">
-  <header class="container header active" id="home">
-    <div class="header-content">
-      <div class="left-header">
-        <div class="h-shape"></div>
-        <div class="image">
-          <img src="img/s1.jpg" alt="" />
-        </div>
-      </div>
-      <div class="right-header">
-        <h1 class="name">
-          Hi, I'm <span>Shan.</span>
-          A Mobile Application Developer.
-        </h1>
-        <p>
-          Skilled mobile application developer proficient in Java and Kotlin
-          for native Android apps, as well as Flutter for hybrid app
-          development. With expertise in crafting innovative and efficient
-          solutions, I bring versatility to mobile app development.
-        </p>
-        <div class="btn-con">
-          <a href="https://drive.google.com/file/d/18zyU4aaaE2W669b7df-7OViQujRINUhG/view?usp=sharing" class="main-btn"
-            target="_blank">
-            <span class="btn-text">Download CV</span>
-            <span class="btn-icon"><i class="fas fa-download"></i></span>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="mainpage" id="mainabout">
-      <div class="main-title">
-        <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
-      </div>
-      <div class="about-container">
-        <div class="left-about">
-          <h4>Information About me</h4>
-          <p>
-            With over seven years of experience in mobile applications development, I specialize in building dynamic,
-            high-quality
-            mobile applications using Java, Kotlin, and Flutter. My portfolio includes a wide range of apps for both
-            public and private sectors, catering to industries such as service providers, restaurants, transportation,
-            and IoT integration. <br />
-            Let's build something amazing together!
-          </p>
-          <div class="btn-con">
-            <a href="https://drive.google.com/file/d/18zyU4aaaE2W669b7df-7OViQujRINUhG/view?usp=sharing"
-              class="main-btn" target="_blank">
-              <span class="btn-text">Download CV</span>
-              <span class="btn-icon"><i class="fas fa-download"></i></span>
-            </a>
-          </div>
-        </div>
-        <div class="right-about">
-          <div class="about-item">
-            <div class="abt-text">
-              <p class="large-text">204+</p>
-              <p class="small-text">
-                Projects <br />
-                Completed
-              </p>
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="abt-text">
-              <p class="large-text">7+</p>
-              <p class="small-text">
-                Years of <br />
-                experience
-              </p>
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="abt-text">
-              <p class="large-text">100+</p>
-              <p class="small-text">
-                Happy <br />
-                Clients
-              </p>
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="abt-text">
-              <p class="large-text">160+</p>
-              <p class="small-text">
-                Customer <br />
-                reviews
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-      <div class="mainpage" id="mainabout">
-        <div class="main-title">
-          <h2>Technical <span>Skills</span><span class="bg-text">Capabilities</span></h2>
-        </div>
-
-
-        <div class="about-stats">
-
-
-
-          <div class="progress-bars">
-
-
-            <div class="progress-bar">
-              <p class="prog-title">JAVA</p>
-              <div class="progress-con">
-                <p class="prog-text">85%</p>
-                <div class="progress">
-                  <span class="java"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">DART</p>
-              <div class="progress-con">
-                <p class="prog-text">75%</p>
-                <div class="progress">
-                  <span class="dart"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">Kotlin</p>
-              <div class="progress-con">
-                <p class="prog-text">70%</p>
-                <div class="progress">
-                  <span class="kotlin"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">RaspberryPI</p>
-              <div class="progress-con">
-                <p class="prog-text">60%</p>
-                <div class="progress">
-                  <span class="rasberrypi"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">Flutter</p>
-              <div class="progress-con">
-                <p class="prog-text">70%</p>
-                <div class="progress">
-                  <span class="flutter"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">Firebase</p>
-              <div class="progress-con">
-                <p class="prog-text">95%</p>
-                <div class="progress">
-                  <span class="firesbase"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">Room Database</p>
-              <div class="progress-con">
-                <p class="prog-text">80%</p>
-                <div class="progress">
-                  <span class="room"></span>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-            <div class="progress-bar">
-              <p class="prog-title">TensorFlow</p>
-              <div class="progress-con">
-                <p class="prog-text">80%</p>
-                <div class="progress">
-                  <span class="tensorflow"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">OpenCV</p>
-              <div class="progress-con">
-                <p class="prog-text">75%</p>
-                <div class="progress">
-                  <span class="opencv"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">ML Kit (Firebase)</p>
-              <div class="progress-con">
-                <p class="prog-text">85%</p>
-                <div class="progress">
-                  <span class="mlkit"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">Google APIs</p>
-              <div class="progress-con">
-                <p class="prog-text">90%</p>
-                <div class="progress">
-                  <span class="googleapis"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">Payment Gateway Integration</p>
-              <div class="progress-con">
-                <p class="prog-text">90%</p>
-                <div class="progress">
-                  <span class="payment"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">Retrofit</p>
-              <div class="progress-con">
-                <p class="prog-text">90%</p>
-                <div class="progress">
-                  <span class="retrofit"></span>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-            <div class="progress-bar">
-              <p class="prog-title">Third Parties API</p>
-              <div class="progress-con">
-                <p class="prog-text">95%</p>
-                <div class="progress">
-                  <span class="thirdparties"></span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="mainpage" id="mainabout">
-        <div class="main-title">
-          <h2>My <span>experiences</span><span class="bg-text">Career Path</span></h2>
-        </div>
-
-
-
-        <div class="timeline">
-
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2022/02 – present</p>
-            <h5>Senior Mobile Application Developer<span> - Surfway (Remote, Denmark)</span></h5>
-            <p>
-              Developed an attendance management solution with facial recognition, PIN, thumbprint, and NFC technology
-              for
-              mobile/tablet apps.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2019/05 – 2025/01</p>
-            <h5>Senior Mobile Application Developer<span> - Punjab Safe Cities Authority (Pakistan)</span></h5>
-            <p>
-              Led mobile application development for iOS and Android. Developed secure apps for public and government
-              use,
-              trained officials on usage, and handled app publishing on Play Store. Focused on security, scalability,
-              and
-              project management.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2018/01 – 2019/05</p>
-            <h5>Co-Founder<span> - SoftLeap (Pakistan)</span></h5>
-            <p>
-              As CTO, led software development, ensured scalable solutions, managed teams, and aligned projects with
-              business goals. Played a key role in company growth and innovation.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2017/03 – 2017/12</p>
-            <h5>Mobile Application Developer<span> - SDSol Technologies (Pakistan)</span></h5>
-            <p>
-              Built various apps, including POS systems, booking services, and e-commerce apps, enhancing expertise in
-              practical solutions.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2016/02 – 2017/03</p>
-            <h5>Android App Developer<span> - Holygon (Pvt.) Limited (Pakistan)</span></h5>
-            <p>
-              Began career as an Android App Developer, building basic-level applications and establishing a strong
-              foundation in mobile app development.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-
-    </div>
-    <div class="mainpage" id="mainportfolio">
-      <div class="main-title">
-        <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
-      </div>
-
-      <div class="portfolios">
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="img/port1.jpg" alt="" />
-          </div>
-          <div class="hover-items">
-            <h3>Project Source</h3>
-            <div class="icons">
-              <a href="https://play.google.com/store/apps/details?id=com.surfface" class="icon" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fab fa-google-play"></i>
-              </a>
-
-
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="img/port2.png" alt="" />
-          </div>
-          <div class="hover-items">
-            <h3>Project Source</h3>
-            <div class="icons">
-              <a href="https://play.google.com/store/apps/details?id=com.psca.ppic3.womensafety&hl=en" class="icon"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-google-play"></i>
-              </a>
-
-              <a href="https://apps.apple.com/pk/app/punjab-police-women-safety-app/id1487787591" class="icon"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-apple"></i>
-              </a>
-
-
-
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="img/port3.png" alt="" />
-          </div>
-          <div class="hover-items">
-            <h3>Project Source</h3>
-            <div class="icons">
-              <a href="https://play.google.com/store/apps/details?id=com.psca.lostandfound&hl=en" class="icon"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-google-play"></i>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="img/port4.png" alt="" />
-          </div>
-          <div class="hover-items">
-            <h3>Project Source</h3>
-            <div class="icons">
-              <a href="https://play.google.com/store/apps/details?id=com.psca.mnc.zindagi&hl=en" class="icon"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-google-play"></i>
-              </a>
-              <a href="https://apps.apple.com/pk/app/zindagi/id1488423934" class="icon" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fab fa-apple"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="img/port5.png" alt="" />
-          </div>
-          <div class="hover-items">
-            <h3>Project Source</h3>
-            <div class="icons">
-              <a href="https://play.google.com/store/apps/details?id=com.gov.ppic3.anquan&hl=en" class="icon"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-google-play"></i>
-              </a>
-
-
-
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="img/other1.png" alt="" />
-          </div>
-          <div class="hover-items">
-            <h3>Project Source</h3>
-            <div class="icons">
-              <a href="projects.html" class="icon" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-eye"></i>
-              </a>
-
-            </div>
-
-
-
-
-
-
-
-          </div>
-
-
-
-
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-
-
-
-
-    <div class="mainpage" id="reviews">
-      <div class="reviews-container">
-        <div class="main-title">
-          <h2>Client <span>Reviews</span><span class="bg-text">Feedback</span></h2>
-        </div>
-        <div class="reviews-content-con">
-          <div class="left-reviews">
-            <p>
-              See what my clients have to say about my work! I’ve collaborated with clients worldwide, delivering
-              high-quality and efficient solutions. These reviews highlight my commitment to excellence and client
-              satisfaction.
-            </p>
-            <div class="review-slider">
-              <!-- Left Arrow -->
-              <button class="slider-arrow left">&#10094;</button>
-
-              <div class="review-slides">
-                <!-- Review Image Screenshots -->
-                <img src="img/reviews/r1.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r2.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r3.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r4.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r5.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r6.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r7.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r8.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r9.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r10.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r11.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r12.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r13.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r14.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r15.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r17.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r20.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r21.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r22.png" alt="Client Review 1" class="review-image">
-                <img src="img/reviews/r23.png" alt="Client Review 1" class="review-image">
-              </div>
-
-              <!-- Right Arrow -->
-              <button class="slider-arrow right">&#10095;</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <div class="mainpage" id="maincontact">
-      <div class="contact-container">
-        <div class="main-title">
-          <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
-        </div>
-        <div class="contact-content-con">
-          <div class="left-contact">
-            <p>
-              Feel free to reach out to me for any inquiries or discussions related to mobile application development.
-              Whether you have a project idea, need assistance with app development, or simply want to connect, I'm here
-              to help.
-              With a proven track record of delivering secure and scalable mobile solutions, I’m eager to collaborate
-              and bring your vision to life.
-              Looking forward to hearing from you!
-            </p>
-            <div class="contact-info">
-              <div class="contact-item">
-                <div class="icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>Location</span>
-                </div>
-                <p>London, United Kingdom</p>
-              </div>
-              <div class="contact-item">
-                <div class="icon">
-                  <i class="fas fa-envelope"></i>
-                  <span>Email</span>
-                </div>
-                <p>
-                  <span>
-                    <a href="mailto:muhammad.shan404@gmail.com?subject=Subject%20Here&body=Message%20Here"
-                      class="contact-link">muhammad.shan404@gmail.com</a></span>
-                </p>
-              </div>
-
-              <div class="contact-item">
-                <div class="icon">
-                  <i class="fas fa-user-graduate"></i>
-                  <span>Mobile Number</span>
-                </div>
-                <p>
-                  <span>+44 7350 651259</span>
-                </p>
-              </div>
-
-            </div>
-            <div class="contact-icons">
-              <div class="contact-icon">
-                <a href="https://github.com/MShannn" target="_blank">
-                  <i title="GitHub" class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/muhammad-shan-449367129/" target="_blank">
-                  <i title="LinkedIn" class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.fiverr.com/users/mr_shan" target="_blank">
-                  <i title="Fiverr" class="fab fa-f"></i>
-                </a>
-                <a href="https://www.upwork.com/freelancers/~01f8574f01b67fa2c4" target="_blank">
-                  <i title="Upwork" class="fab fa-upwork"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          >
-        </div>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo"><span class="logo-mark">MS</span>Muhammad Shan</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">What I do</a>
+        <a href="#apps">Apps</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme">
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a href="cv/Muhammad-Shan-CV.pdf" class="btn btn-primary nav-cv" target="_blank" rel="noopener">Download CV</a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow"><span class="dot"></span>Open to Android &amp; mobile roles · London</span>
+          <h1>Hi, I'm Muhammad Shan.<br />I build <span class="gradient-text">secure, production mobile apps</span> people rely on.</h1>
+          <p class="lead">Senior Android Developer working in Kotlin, Jetpack Compose and Flutter. My apps are live on Google Play and the App Store: police safety apps, biometric attendance systems, and subscription fitness apps.</p>
+          <div class="hero-cta">
+            <a href="#apps" class="btn btn-primary">See my live apps
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="cv/Muhammad-Shan-CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              Download CV
+            </a>
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/mrshaan/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            <a href="https://github.com/MShannn" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a>
+            <a href="https://www.upwork.com/freelancers/~01f8574f01b67fa2c4" target="_blank" rel="noopener" aria-label="Upwork"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.56 13.38c-1.07 0-2.08-.45-3-1.2l.22-1.06.01-.04c.2-1.13.84-3.03 2.77-3.03a2.67 2.67 0 0 1 0 5.33zm0-8.03c-2.47 0-4.38 1.6-5.16 4.24-1.19-1.79-2.09-3.94-2.62-5.75H8.12v6.94a2.45 2.45 0 1 1-4.9 0V3.84H.56v6.94a5.1 5.1 0 1 0 10.22 0V9.62c.48 1.01 1.08 2.03 1.8 2.94l-1.53 7.18h2.71l1.18-5.21c1.03.66 2.22 1.08 3.58 1.08a5.38 5.38 0 0 0 5.37-5.38 5.37 5.37 0 0 0-5.33-5.37z"/></svg></a>
+            <a href="mailto:muhammad.shan404@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+          </div>
+        </div>
+
+        <div class="portrait-wrap reveal">
+          <div class="portrait"><img src="img/s1.jpg" alt="Muhammad Shan" /></div>
+          <div class="chip chip-1"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/ef/17/17ef175d-26d4-2629-005c-13dcd2420cbf/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="" />Kotlin · Compose</div>
+          <div class="chip chip-2"><img src="https://play-lh.googleusercontent.com/04qfPejP7NN5eyV88i1VObPGCIjYq5k4JmeToXATPZeQbh8JvFKaVepZa8Y61X9Ek5UKrxIo-XBZwStpniasJA=s256" alt="" />Flutter · iOS</div>
+          <div class="chip chip-3"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e5/d4/0d/e5d40daf-5c32-37cf-a406-66ad1bbeab28/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/256x256bb.jpg" alt="" />Biometrics · NFC</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat"><strong class="gradient-text">10+</strong><span>apps live on Google Play &amp; App Store</span></div>
+          <div class="stat"><strong class="gradient-text">100+</strong><span>happy clients worldwide</span></div>
+          <div class="stat"><strong class="gradient-text">160+</strong><span>client reviews</span></div>
+          <div class="stat"><strong class="gradient-text">4</strong><span>countries: UK · USA · Denmark · Pakistan</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section id="services" class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">What I do</span>
+          <h2>Mobile apps, end to end</h2>
+          <p>From architecture to App Store review, I build apps that work in the real world: on kiosk tablets, in emergencies, and with real payments.</p>
+        </div>
+        <div class="services">
+          <div class="service reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+            <h3>Native Android</h3>
+            <p>Modern Kotlin apps with Jetpack Compose and clean architecture, plus years of Java experience.</p>
+            <div class="tags"><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Java</span><span class="tag">MVVM</span><span class="tag">Room</span></div>
+          </div>
+          <div class="service reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="9" height="16" rx="2"/><rect x="13" y="4" width="9" height="16" rx="2"/></svg></div>
+            <h3>Flutter &amp; iOS</h3>
+            <p>Cross-platform apps shipped to both stores, including white-label builds and App Store Connect releases.</p>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">iOS</span><span class="tag">HealthKit</span></div>
+          </div>
+          <div class="service reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 11c0 3-1 6-3 8M8 6a6 6 0 0 1 10 4c0 4-1 7-2 9M5 9a8 8 0 0 1 1-3M5 13c0 2-.5 4-1.5 5.5M12 11c0-1 .5-2 1.5-2"/></svg></div>
+            <h3>Biometrics &amp; hardware</h3>
+            <p>On-device face recognition, fingerprint scanners, NFC cards and locked-down kiosk / Device Owner apps.</p>
+            <div class="tags"><span class="tag">TensorFlow</span><span class="tag">ML Kit</span><span class="tag">NFC</span><span class="tag">Kiosk mode</span></div>
+          </div>
+          <div class="service reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+            <h3>Payments &amp; delivery</h3>
+            <p>Google Pay, Apple Pay and subscriptions, shipped through CI/CD pipelines with Play Console and App Store releases.</p>
+            <div class="tags"><span class="tag">In-app purchases</span><span class="tag">CI/CD</span><span class="tag">Firebase</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Live apps ===== -->
+    <section id="apps">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Live in the stores</span>
+          <h2>Apps you can download today</h2>
+          <p>The source code is private under client NDAs, but these apps are live. Tap a store button to try them.</p>
+        </div>
+        <div class="apps">
+
+          <article class="app reveal">
+            <div class="app-head">
+              <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/ef/17/17ef175d-26d4-2629-005c-13dcd2420cbf/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="Surfway Mobile icon" />
+              <div><h3>Surfway Mobile</h3><small>Surfway · Denmark · Flutter</small></div>
+            </div>
+            <p>Time registration for workforces: clock in and out and move between departments. Shipped as 3 white-label brands on Android and iOS.</p>
+            <div class="white-label"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/ef/17/17ef175d-26d4-2629-005c-13dcd2420cbf/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="Surfway" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/8a/af/888aaf2f-0563-f53c-686a-0558be2069f4/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/256x256bb.jpg" alt="Sagro" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ea/53/97/ea539754-a771-d61a-1884-9718b0571067/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/256x256bb.jpg" alt="Wellco" /><small style="color:var(--text-muted)">Surfway · Sagro · Wellco</small></div>
+            <div class="stores">
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.sysm.surfway" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.6 11.6 2.4 2.4-11 6.3 8.6-8.7zm3.6-3.6 2.9 1.7c.8.5.8 1.6 0 2.1l-2.9 1.7-2.6-2.6 2.6-2.9zM6.6 1.9l11 6.3-2.4 2.4-8.6-8.7z"/></svg>Google Play</a>
+              <a class="store" href="https://apps.apple.com/dk/app/surfway-mobile/id6504337142" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8s2.3-1.3 3.1-2.5c1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1-3.2-1 .1-2.2.7-2.9 1.6-.6.7-1.2 1.9-1 3.1 1.1.1 2.2-.6 2.9-1.5z"/></svg>App Store</a>
+            </div>
+          </article>
+
+          <article class="app reveal">
+            <div class="app-head">
+              <img class="app-icon" src="https://play-lh.googleusercontent.com/fNCvZgA_AeSrgZMV9ebOMjTFtxElVy0azHM7aDUXPDCSwB4vbZwJCw-OYbDu2OPF2SGI8EvL4TAF2_jo6hE_MQ=s256" alt="Time Clock App icon" />
+              <div><h3>Time Clock App</h3><small>Surfway · Android tablet kiosk</small></div>
+            </div>
+            <p>Wall-mounted attendance terminal. Employees clock in with face recognition, a PIN code or an NFC key fob.</p>
+            <div class="stores">
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.timetracking.surfway" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.6 11.6 2.4 2.4-11 6.3 8.6-8.7zm3.6-3.6 2.9 1.7c.8.5.8 1.6 0 2.1l-2.9 1.7-2.6-2.6 2.6-2.9zM6.6 1.9l11 6.3-2.4 2.4-8.6-8.7z"/></svg>Google Play</a>
+            </div>
+          </article>
+
+          <article class="app reveal">
+            <div class="app-head">
+              <img class="app-icon" src="https://play-lh.googleusercontent.com/Laf3_KbXVQ8cDxBnDAoMljvEpFHpKz_XyyZTbLA6It4MaDrO51_zq4oU4t3os4hbVMMhUT5u6fi42XZqwxH3=s256" alt="Surfface icon" />
+              <div><h3>Surfface &amp; Sagro Face</h3><small>Surfway · Android · Java</small></div>
+            </div>
+            <p>Face-recognition attendance running on device with TensorFlow, with PIN as a fallback.</p>
+            <div class="stores">
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.surfface" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.6 11.6 2.4 2.4-11 6.3 8.6-8.7zm3.6-3.6 2.9 1.7c.8.5.8 1.6 0 2.1l-2.9 1.7-2.6-2.6 2.6-2.9zM6.6 1.9l11 6.3-2.4 2.4-8.6-8.7z"/></svg>Surfface</a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.wellco.sagroface" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.6 11.6 2.4 2.4-11 6.3 8.6-8.7zm3.6-3.6 2.9 1.7c.8.5.8 1.6 0 2.1l-2.9 1.7-2.6-2.6 2.6-2.9zM6.6 1.9l11 6.3-2.4 2.4-8.6-8.7z"/></svg>Sagro Face</a>
+            </div>
+          </article>
+
+          <article class="app reveal">
+            <div class="app-head">
+              <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e5/d4/0d/e5d40daf-5c32-37cf-a406-66ad1bbeab28/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/256x256bb.jpg" alt="Women Safety App icon" />
+              <div><h3>Women Safety App</h3><small>Punjab Police &amp; PSCA · Android + iOS</small></div>
+            </div>
+            <p>Emergency app for women: call or chat with police, share live location and check place safety reviews.</p>
+            <div class="stores">
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.psca.ppic3.womensafety" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.6 11.6 2.4 2.4-11 6.3 8.6-8.7zm3.6-3.6 2.9 1.7c.8.5.8 1.6 0 2.1l-2.9 1.7-2.6-2.6 2.6-2.9zM6.6 1.9l11 6.3-2.4 2.4-8.6-8.7z"/></svg>Google Play</a>
+              <a class="store" href="https://apps.apple.com/pk/app/punjab-police-women-safety-app/id1487787591" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8s2.3-1.3 3.1-2.5c1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1-3.2-1 .1-2.2.7-2.9 1.6-.6.7-1.2 1.9-1 3.1 1.1.1 2.2-.6 2.9-1.5z"/></svg>App Store</a>
+            </div>
+          </article>
+
+          <article class="app reveal">
+            <div class="app-head">
+              <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/c4/d7/90/c4d7900f-a789-d711-567a-0429bccab1d1/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/256x256bb.jpg" alt="Zindagi icon" />
+              <div><h3>Zindagi</h3><small>Punjab Safe Cities Authority · Android + iOS</small></div>
+            </div>
+            <p>Public awareness and reporting app supporting a drug-free Pakistan, built for the Punjab Safe Cities Authority.</p>
+            <div class="stores">
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.psca.mnc.zindagi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.6 11.6 2.4 2.4-11 6.3 8.6-8.7zm3.6-3.6 2.9 1.7c.8.5.8 1.6 0 2.1l-2.9 1.7-2.6-2.6 2.6-2.9zM6.6 1.9l11 6.3-2.4 2.4-8.6-8.7z"/></svg>Google Play</a>
+              <a class="store" href="https://apps.apple.com/pk/app/zindagi/id1488423934" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8s2.3-1.3 3.1-2.5c1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1-3.2-1 .1-2.2.7-2.9 1.6-.6.7-1.2 1.9-1 3.1 1.1.1 2.2-.6 2.9-1.5z"/></svg>App Store</a>
+            </div>
+          </article>
+
+          <article class="app reveal">
+            <div class="app-head">
+              <img class="app-icon" src="https://play-lh.googleusercontent.com/04qfPejP7NN5eyV88i1VObPGCIjYq5k4JmeToXATPZeQbh8JvFKaVepZa8Y61X9Ek5UKrxIo-XBZwStpniasJA=s256" alt="My Fitness Compass icon" />
+              <div><h3>My Fitness Compass</h3><small>West Coast Supplements · USA · Flutter</small></div>
+            </div>
+            <p>Fitness and nutrition app with HealthKit, a barcode food scanner, Apple Pay / Google Pay and subscriptions.</p>
+            <div class="stores">
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.myftinsess.compass" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.6 11.6 2.4 2.4-11 6.3 8.6-8.7zm3.6-3.6 2.9 1.7c.8.5.8 1.6 0 2.1l-2.9 1.7-2.6-2.6 2.6-2.9zM6.6 1.9l11 6.3-2.4 2.4-8.6-8.7z"/></svg>Google Play</a>
+              <a class="store" href="https://apps.apple.com/us/app/myfitnesscompass/id6677015552" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8s2.3-1.3 3.1-2.5c1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1-3.2-1 .1-2.2.7-2.9 1.6-.6.7-1.2 1.9-1 3.1 1.1.1 2.2-.6 2.9-1.5z"/></svg>App Store</a>
+            </div>
+          </article>
+
+          <article class="app reveal">
+            <div class="app-head">
+              <img class="app-icon" src="https://play-lh.googleusercontent.com/6DZi-k0DpD3NzXdLtTbRvrkvWluIgbUzmNvurxcjAolnjysnK8ndPYQVB3aSinJvUdVMIrCvqEHlKCyZomYWOg=s256" alt="Lost and Found Persons icon" />
+              <div><h3>Lost &amp; Found Persons</h3><small>Punjab Safe Cities Authority · Android</small></div>
+            </div>
+            <p>Report missing or found people, including children and people with dementia, to help reunite families faster.</p>
+            <div class="stores">
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.psca.lostandfound" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.6 11.6 2.4 2.4-11 6.3 8.6-8.7zm3.6-3.6 2.9 1.7c.8.5.8 1.6 0 2.1l-2.9 1.7-2.6-2.6 2.6-2.9zM6.6 1.9l11 6.3-2.4 2.4-8.6-8.7z"/></svg>Google Play</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Experience</span>
+          <h2>Where I've built</h2>
+        </div>
+        <div class="timeline">
+          <div class="job reveal"><div class="job-card">
+            <div class="job-top"><div><h3>Software Engineer</h3><span class="company">TextBet · United Kingdom</span></div><span class="when">Jul 2026 – Present</span></div>
+            <ul>
+              <li>Build and maintain the company's Flutter mobile app for iOS and Android: secure WebView, Firebase push notifications and JWT auth</li>
+              <li>Handle releases on Google Play and the App Store, and work closely with the backend and web teams</li>
+            </ul>
+          </div></div>
+          <div class="job reveal"><div class="job-card">
+            <div class="job-top"><div><h3>Senior Mobile Application Developer</h3><span class="company">Surfway · Denmark (remote)</span></div><span class="when">Feb 2022 – Present</span></div>
+            <ul>
+              <li>Built and maintain a Flutter time-registration app shipped as 3 white-label brands on Android and iOS</li>
+              <li>Manage iOS end to end: builds, App Store Connect, review submissions and releases</li>
+              <li>Built on-device face-recognition attendance (Java, TensorFlow) and fingerprint + NFC kiosk tablet apps</li>
+            </ul>
+          </div></div>
+          <div class="job reveal"><div class="job-card">
+            <div class="job-top"><div><h3>Freelance Mobile App Developer</h3><span class="company">Android &amp; Flutter · Remote</span></div><span class="when">Jan 2022 – Present</span></div>
+            <ul>
+              <li>My Fitness Compass (USA): Flutter app with HealthKit, payments and subscriptions on both stores</li>
+              <li>PhoneLock: Kotlin Device Owner app that remotely locks financed phones</li>
+            </ul>
+          </div></div>
+          <div class="job reveal"><div class="job-card">
+            <div class="job-top"><div><h3>Mobile Developer → Deputy Executive Officer (AI/ML)</h3><span class="company">Punjab Safe Cities Authority · Pakistan</span></div><span class="when">May 2019 – Jan 2025</span></div>
+            <ul>
+              <li>Built and led secure public-safety apps for iOS and Android, including the Women Safety App, Zindagi and Lost &amp; Found Persons</li>
+              <li>Led and trained junior developers, and ran training sessions for officials</li>
+            </ul>
+          </div></div>
+          <div class="job reveal"><div class="job-card">
+            <div class="job-top"><div><h3>Co-Founder &amp; CTO</h3><span class="company">SoftLeap · Lahore</span></div><span class="when">Jan 2018 – May 2019</span></div>
+            <ul><li>Led software delivery and the development team from idea to deployment</li></ul>
+          </div></div>
+          <div class="job reveal"><div class="job-card">
+            <div class="job-top"><div><h3>Android Developer</h3><span class="company">SDSol Technologies &amp; Holygon · Lahore</span></div><span class="when">2016 – 2017</span></div>
+            <ul><li>Built POS, booking and e-commerce Android apps</li></ul>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">More projects</span>
+          <h2>Client projects</h2>
+          <p>A selection of apps built for clients around the world.</p>
+        </div>
+        <div class="projects">
+          <article class="project reveal"><div class="project-img"><img src="img/go1.jpg" alt="GoRides app" loading="lazy" /></div>
+            <div class="project-body"><h3>GoRides</h3><p>Ride-hailing passenger and driver apps with live tracking and payments.</p><div class="tags"><span class="tag">Kotlin</span><span class="tag">Google Maps</span><span class="tag">Flutterwave</span></div></div></article>
+          <article class="project reveal"><div class="project-img"><img src="img/dronline/d4.jpeg" alt="FinderOnline app" loading="lazy" /></div>
+            <div class="project-body"><h3>FinderOnline</h3><p>Book specialist doctors, with chat, audio and video consultations.</p><div class="tags"><span class="tag">Java</span><span class="tag">Twilio</span><span class="tag">Firebase</span></div></div></article>
+          <article class="project reveal"><div class="project-img"><img src="img/food/d1.jpeg" alt="Eatlub app" loading="lazy" /></div>
+            <div class="project-body"><h3>Eatlub</h3><p>Food delivery for restaurants, riders and customers, with live rider tracking.</p><div class="tags"><span class="tag">Android</span><span class="tag">Google Maps</span><span class="tag">FCM</span></div></div></article>
+          <article class="project reveal"><div class="project-img"><img src="img/vegitable/d1.png" alt="Souq Al Fajar app" loading="lazy" /></div>
+            <div class="project-body"><h3>Souq Al Fajar</h3><p>Order fresh vegetables directly from local suppliers, with live stock and chat.</p><div class="tags"><span class="tag">Android</span><span class="tag">Firebase</span></div></div></article>
+          <article class="project reveal"><div class="project-img"><img src="img/parking/d1.png" alt="Parking ticket app" loading="lazy" /></div>
+            <div class="project-body"><h3>Parking Tickets</h3><p>Issue parking tickets with dynamic fares, QR validation and a portable printer.</p><div class="tags"><span class="tag">Android</span><span class="tag">QR</span><span class="tag">Printing</span></div></div></article>
+          <article class="project reveal"><div class="project-img"><img src="img/reading/d1.jpeg" alt="Reading Glasses app" loading="lazy" /></div>
+            <div class="project-body"><h3>Reading Glasses</h3><p>OCR and text-to-speech app that helps people with low vision read.</p><div class="tags"><span class="tag">OCR</span><span class="tag">Text-to-speech</span></div></div></article>
+          <article class="project reveal"><div class="project-img"><img src="img/whats/d1.jpg" alt="What's Here app" loading="lazy" /></div>
+            <div class="project-body"><h3>What's Here</h3><p>Discover nearby places by category on the map, with reviews and photos.</p><div class="tags"><span class="tag">Google Maps</span><span class="tag">Android</span></div></div></article>
+          <article class="project reveal"><div class="project-img"><img src="img/xls/d1.jpeg" alt="XLS Viewer app" loading="lazy" /></div>
+            <div class="project-body"><h3>XLS Viewer</h3><p>View, manage and favourite Excel and CSV files on Android.</p><div class="tags"><span class="tag">Java</span><span class="tag">Android</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section id="reviews" class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Client reviews</span>
+          <h2>What clients say</h2>
+          <p>Real reviews from clients I've worked with on freelance platforms.</p>
+        </div>
+      </div>
+      <div class="marquee reveal">
+        <div class="marquee-track" id="reviewTrack"></div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <h2>Let's build your next app.</h2>
+            <p>Open to Android and mobile developer roles in London (on-site, hybrid or remote) and selected freelance projects.</p>
+            <div class="hero-cta" style="margin:0">
+              <a href="mailto:muhammad.shan404@gmail.com" class="btn btn-primary">Email me</a>
+              <a href="cv/Muhammad-Shan-CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download CV</a>
+            </div>
+          </div>
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:muhammad.shan404@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>muhammad.shan404@gmail.com</a>
+            <a class="contact-item" href="tel:+447350651259"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+44 7350 651259</a>
+            <a class="contact-item" href="https://www.linkedin.com/in/mrshaan/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>linkedin.com/in/mrshaan</a>
+            <a class="contact-item" href="https://github.com/MShannn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>github.com/MShannn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Muhammad Shan · Senior Android Developer · London</div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
 </html>
