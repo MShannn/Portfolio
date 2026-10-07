@@ -318,3 +318,115 @@ footer { padding: 28px 0 40px; color: var(--text-muted); font-size: 0.88rem; tex
   .review { width: 300px; }
   section { padding: 64px 0; }
 }
+
+/* =====================================================================
+   Motion layer: aurora, rotating headline, spotlight cards, tilt,
+   progress bar. Everything is disabled for prefers-reduced-motion.
+   ===================================================================== */
+
+/* Scroll progress bar */
+.progress {
+  position: fixed; top: 0; left: 0; height: 3px; width: 100%; z-index: 100;
+  background: var(--gradient); transform-origin: 0 50%; transform: scaleX(0);
+}
+
+/* Nav gets a soft shadow once you scroll */
+.nav { transition: box-shadow 0.3s ease, background 0.3s ease; }
+.nav.scrolled { box-shadow: 0 8px 30px rgba(10, 14, 40, 0.12); }
+
+/* Aurora background in the hero */
+.hero::before { animation: aurora-a 18s ease-in-out infinite alternate; }
+.hero::after { animation: aurora-b 22s ease-in-out infinite alternate; }
+.hero .aurora {
+  position: absolute; width: 380px; height: 380px; border-radius: 50%;
+  background: #a855f7; filter: blur(90px); opacity: 0.25; z-index: -1;
+  top: 30%; left: 45%; animation: aurora-c 20s ease-in-out infinite alternate;
+}
+@keyframes aurora-a { to { transform: translate(140px, 90px) scale(1.15); } }
+@keyframes aurora-b { to { transform: translate(-160px, -80px) scale(1.1); } }
+@keyframes aurora-c { 0% { transform: translate(-60px, 40px); } 100% { transform: translate(80px, -60px) scale(1.2); } }
+
+/* Faint grid pattern behind the hero */
+.hero .grid-bg {
+  position: absolute; inset: 0; z-index: -1; opacity: 0.5;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 70%);
+  mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 70%);
+}
+
+/* Animated gradient text + rotating phrase */
+.gradient-text { background-size: 200% auto; animation: shine 6s linear infinite; }
+@keyframes shine { to { background-position: 200% center; } }
+.rotator { transition: opacity 0.45s ease, filter 0.45s ease; }
+.rotator.out { opacity: 0; filter: blur(8px); }
+
+/* Pulsing "open to work" dot */
+.dot { animation: pulse 2.2s ease-out infinite; }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(61, 220, 132, 0.55); }
+  100% { box-shadow: 0 0 0 12px rgba(61, 220, 132, 0); }
+}
+
+/* Primary button shimmer */
+.btn-primary { position: relative; overflow: hidden; }
+.btn-primary::after {
+  content: ""; position: absolute; top: 0; left: -120%; width: 60%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: skewX(-20deg); transition: left 0.7s ease;
+}
+.btn-primary:hover::after { left: 140%; }
+.btn-primary:hover { box-shadow: 0 14px 34px rgba(79, 107, 255, 0.5); }
+
+/* Portrait: spinning gradient ring + 3D tilt */
+.portrait-wrap { perspective: 900px; }
+.portrait-wrap::before {
+  content: ""; position: absolute; inset: -14px; border-radius: 38px; z-index: -1;
+  background: conic-gradient(from var(--angle, 0deg), #3ddc84, #4f6bff, #a855f7, #3ddc84);
+  filter: blur(18px); opacity: 0.55; animation: spin 8s linear infinite;
+}
+@property --angle { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+@keyframes spin { to { --angle: 360deg; } }
+.portrait { transition: transform 0.25s ease-out; transform-style: preserve-3d; will-change: transform; }
+
+/* Spotlight glow that follows the cursor on cards */
+.service, .app, .project, .job-card, .stat { position: relative; isolation: isolate; }
+.service::before, .app::before, .project::before, .job-card::before, .stat::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: -1; opacity: 0;
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(79, 107, 255, 0.14), transparent 45%);
+  transition: opacity 0.3s ease; pointer-events: none;
+}
+.service:hover::before, .app:hover::before, .project:hover::before, .job-card:hover::before, .stat:hover::before { opacity: 1; }
+.service:hover, .app:hover, .project:hover, .job-card:hover { border-color: rgba(79, 107, 255, 0.45); }
+
+/* Icons get a little life */
+.service-icon { transition: transform 0.35s cubic-bezier(.2,.8,.2,1.4), background 0.3s, color 0.3s; }
+.service:hover .service-icon { transform: rotate(-8deg) scale(1.12); background: var(--gradient); color: #fff; }
+.app-icon { transition: transform 0.35s cubic-bezier(.2,.8,.2,1.4); }
+.app:hover .app-icon { transform: translateY(-4px) rotate(-4deg) scale(1.06); }
+.store svg { transition: transform 0.3s; }
+.store:hover svg { transform: scale(1.2); }
+
+/* Kicker underline grows in */
+.section-head .kicker { position: relative; display: inline-block; padding-bottom: 4px; }
+.section-head .kicker::after {
+  content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background: var(--gradient);
+  transition: width 0.9s ease 0.2s;
+}
+.section-head.visible .kicker::after { width: 100%; }
+
+/* Timeline dot glow */
+.job.visible::before { animation: dotpop 0.6s ease both; }
+@keyframes dotpop { 0% { transform: scale(0); } 70% { transform: scale(1.3); } 100% { transform: scale(1); } }
+
+/* Smoother, staggered reveal */
+.reveal { transition: opacity 0.8s cubic-bezier(.2,.7,.2,1), transform 0.8s cubic-bezier(.2,.7,.2,1); transition-delay: var(--delay, 0s); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before, .hero::after, .hero .aurora, .gradient-text, .dot, .portrait-wrap::before, .job.visible::before { animation: none !important; }
+  .portrait { transform: none !important; }
+  .rotator { transition: none; }
+  .progress { display: none; }
+}
